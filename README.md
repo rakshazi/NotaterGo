@@ -20,7 +20,7 @@ If $XDA_DATA_HOME env not set, will be used `$HOME/.local/share/NotaterGo` dir.
 
 # Downloads
 
-See in ./bin dir
+See in [releases](https://github.com/rakshazi/NotaterGo/releases)
 
 # Compilation
 
