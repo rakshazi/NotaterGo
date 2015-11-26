@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>NotaterGo by rakshazi</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-dark.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>NotaterGo</h1>
+        <p>Simple notes app (GTK2) with managing from system tray</p>
+        <p class="view"><a href="https://github.com/rakshazi/NotaterGo">View the Project on GitHub <small>rakshazi/NotaterGo</small></a></p>
+        <ul>
+          <li><a href="https://github.com/rakshazi/NotaterGo/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/rakshazi/NotaterGo/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/rakshazi/NotaterGo">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a id="features" class="anchor" href="#features" aria-hidden="true"><span class="octicon octicon-link"></span></a>Features</h1>
+
+<ul>
+<li>Create note from tray</li>
+<li>Autosave any note</li>
+<li>All notes in plain text format
+That's all. Just create/read/delete notes, no more.</li>
+</ul>
+
+<h1>
+<a id="folders" class="anchor" href="#folders" aria-hidden="true"><span class="octicon octicon-link"></span></a>Folders</h1>
+
+<p>NotaterGo releases <a href="http://standards.freedesktop.org/basedir-spec/latest/ar01s03.html">FreeDesktop specification for data dir</a>.</p>
+
+<p>Default: <code>$XDA_DATA_HOME/NotaterGo</code></p>
+
+<p>If $XDA_DATA_HOME env not set, will be used <code>$HOME/.local/share/NotaterGo</code> dir.</p>
+
+<h1>
+<a id="downloads" class="anchor" href="#downloads" aria-hidden="true"><span class="octicon octicon-link"></span></a>Downloads</h1>
+
+<p>See in <a href="https://github.com/rakshazi/NotaterGo/releases">releases</a></p>
+
+<h1>
+<a id="compilation" class="anchor" href="#compilation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Compilation</h1>
+
+<p><strong>go build</strong></p>
+
+<pre><code>go build app.go
+</code></pre>
+
+<p><strong>gccgo</strong> (doesn't work for now, <a href="https://github.com/mattn/go-gtk/issues/253">more info</a>)</p>
+
+<pre><code>go build -a -gccgoflags "-march=native -O3" -compiler gccgo app.go
+</code></pre>
+      </section>
+    </div>
+    <footer>
+      <p>Project maintained by <a href="https://github.com/rakshazi">rakshazi</a></p>
+      <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
+    </footer>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
