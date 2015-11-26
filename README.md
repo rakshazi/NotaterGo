@@ -12,7 +12,7 @@ Very simple notes app with tray icon.
 That's all. Just create/read/delete notes, no more.
 
 # Folders
-NotaterGo releases (FreeDesktop specification for data dir)[http://standards.freedesktop.org/basedir-spec/latest/ar01s03.html].
+NotaterGo releases [FreeDesktop specification for data dir](http://standards.freedesktop.org/basedir-spec/latest/ar01s03.html).
 
 Default: `$XDA_DATA_HOME/NotaterGo`
 
@@ -29,7 +29,7 @@ See in ./bin dir
 go build app.go
 ```
 
-**gccgo** (doesn't work for now, (more info)[https://github.com/mattn/go-gtk/issues/253])
+**gccgo** (doesn't work for now, [more info](https://github.com/mattn/go-gtk/issues/253))
 ```
 go build -a -gccgoflags "-march=native -O3" -compiler gccgo app.go
 ```
