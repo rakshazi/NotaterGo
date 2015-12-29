@@ -74,15 +74,17 @@ func createEditorWindow(note string) {
 	textview.SetCursorVisible(true)
 	buffer := textview.GetBuffer()
 	buffer.SetText(string(readNote(note)))
-	buffer.Connect("changed", func() {
-		buffer.GetStartIter(&start)
-		buffer.GetEndIter(&end)
-		writeNote(note, buffer.GetText(&start, &end, true))
-	})
 	textview.SetSizeRequest(500, 300)
 	vbox.PackStart(textview, false, false, 0)
 
 	window.Connect("destroy", func() {
+		//Remove (clear) file
+		deleteNote(note)
+		//Save text to file
+		buffer.GetStartIter(&start)
+		buffer.GetEndIter(&end)
+		writeNote(note, buffer.GetText(&start, &end, true))
+
 		updateList()
 	})
 	window.Add(vbox)
